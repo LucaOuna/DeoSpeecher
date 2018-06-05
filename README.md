@@ -59,7 +59,7 @@ Then, we can run the main code "DeoSpeecher.py":
    cd folder_of_main_code
    python DeoSpeecher.py
 ```
-Note: Take a look at the code comments to understand each step taken.
+Note: Take a look at the code comments to understand each step taken.  
 Finally, configure your Raspberry Pi to launch the code directly when you turn it on. For that, edit the file rc.local:
 ```Shell
    sudo nano /etc/rc.local
@@ -72,7 +72,7 @@ And add these 2 lines just before "exit" instruction:
 That's it ! Henceforth, you can play with your new speech recognizer.
 
 ## References
-Initial tutorial: https://www.youtube.com/watch?v=a25NJRfEHX4
+Initial tutorial: https://www.youtube.com/watch?v=a25NJRfEHX4  
 Documentation: https://pypi.org/project/SpeechRecognition/
 
 
@@ -86,7 +86,7 @@ Documentation: https://pypi.org/project/SpeechRecognition/
 - List of uploaded documents: H&S.mp4 ; Electrical_circuit.png ; DeoSpeecher.py ; servo.py
 
 ## Personnal Feedback
-We made a speech recognizer on a Raspberry Pi able to activate a deodorant, repeat what we say with its own automatic voice, and stop its program from vocal instructions.
-The main difficulty we faced is the fact that existing tutorials on Raspberry Pi required special libraries and special configurations of the microcontroller, and most of these tutorials were out of date thus incompatible with our libraries versions. So we spent a lot of time to perform configurations and updates until we abandoned to turn to a tutorial which directly implement python library "SpeechRecognition". This library using Google speech recognition is the best converter from speech to text we found.
-Moreover, the conversion from text to speech (essentially for the repeat function) had poor quality. So we tested a lot of solutions until we found the "call" fonction from subprocess library using "eSpeak" module. Then, we reach a sufficiently good quality to perfom the repetition.
-The added value is the fact we have an all-in-one tutorial doing speech to text and text to speech conversion as well as actuators control by voice (servo motor and LEDs). The main asset of this tutorial is its insurance to be always up to date given the use of intrinsic python functions.
+We made a speech recognizer on a Raspberry Pi able to activate a deodorant, repeat what we say with its own automatic voice, and stop its program from vocal instructions.  
+The main difficulty we faced is the fact that existing tutorials on Raspberry Pi required special libraries and special configurations of the microcontroller, and most of these tutorials were out of date thus incompatible with our libraries versions. So we spent a lot of time to perform configurations and updates until we abandoned to turn to a tutorial which directly implement python library "SpeechRecognition". This library using Google speech recognition is the best converter from speech to text we found.  
+Moreover, the conversion from text to speech (essentially for the repeat function) had poor quality. So we tested a lot of solutions until we found the "call" fonction from subprocess library using "eSpeak" module. Then, we reach a sufficiently good quality to perfom the repetition.  
+The added value is the fact we have an all-in-one tutorial doing speech to text and text to speech conversion as well as actuators control by voice (servo motor and LEDs). The main asset of this tutorial is its insurance to be always up to date given the use of intrinsic python functions.  
