@@ -39,7 +39,33 @@ That contains the "call" function allowing to save text into audio wav file than
 
 ## Hardware
 There are different devices to connect on the Raspberry Pi:
-- Microphone thanks to a USB sound card on input port
-- Speakers directly connected to the output jack port
-- Button with the following electric circuit
+- Microphone on input port of USB sound card
+- Speakers on output port of USB sound card
+- Button on GPIO 18
+- Servo motor on GPIO 22 (control wire)
+- Green LED on GPIO 20
+- Red LED on GPIO 21
+Reproduce the following circuit:
 ![alt text](https://raw.githubusercontent.com/LucaOuna/DeoSpeecher/master/Images/Electrical_circuit.png)
+
+## Software
+The first step is to configure microphone and speaker with "alsamixer" module:
+```Shell
+   apt-get install libasound2 alsa-utils alsa-oss
+   alsamixer
+```
+Then, we can run the main code "DeoSpeech.py":
+```Shell
+   cd folder_of_main_code
+   python DeoSpeech.py
+```
+Finally, configure your Raspberry Pi to launch the code directly when you turn it on. For that, edit the file rc.local:
+```Shell
+   sudo nano /etc/rc.local
+```
+And add these 2 lines just before "exit" instruction:
+```Shell
+   cd folder_of_main_code
+   python DeoSpeech.py
+```
+That's it ! You can henceforth
