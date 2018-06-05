@@ -8,7 +8,7 @@ This project consists of speech recognition on Raspberry Pi. It performs a speec
 - Shut down the running program with the command "stop"
 
 ## Demonstration
-[![Watch the video](https://raw.github.com/LucaOuna/DeoSpeecher/master/Images/Electrical_circuit.png)](https://raw.github.com/LucaOuna/DeoSpeecher/master/Demonstration/H&S.mp4)
+[![Watch the video](https://raw.github.com/LucaOuna/DeoSpeecher/master/Images/Demonstration.png)](https://raw.github.com/LucaOuna/DeoSpeecher/master/Demonstration/H&S.mp4)
 ## Requirements
 Once you have a Raspberry Pi with Python3 installed, you have to add some libraries for performing the project:
 - [pip](https://pip.pypa.io/en/stable/)
