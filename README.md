@@ -42,4 +42,4 @@ There are different devices to connect on the Raspberry Pi:
 - Microphone thanks to a USB sound card on input port
 - Speakers directly connected to the output jack port
 - Button with the following electric circuit
-![alt text](https://raw.githubusercontent.com/LucaOuna/DeoSpeecher/image/path/to/img.png)
+![alt text](https://raw.githubusercontent.com/LucaOuna/DeoSpeecher/master/bcp_de_Gens.png)
