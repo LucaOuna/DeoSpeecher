@@ -68,4 +68,4 @@ And add these 2 lines just before "exit" instruction:
    cd folder_of_main_code
    python DeoSpeech.py
 ```
-That's it ! You can henceforth
+That's it ! Henceforth, you can play with your new speech recognizer.
