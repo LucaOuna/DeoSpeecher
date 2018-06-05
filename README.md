@@ -10,7 +10,12 @@ This project consists of speech recognition on Raspberry Pi. It performs a speec
 ## Demonstration
 
 ## Requirements
-Once you have a Raspberry Pi with Python installed, you have to add some libraries for performing the project:
+Once you have a Raspberry Pi with Python3 installed, you have to add some libraries for performing the project:
+- [pip](https://pip.pypa.io/en/stable/)
+```Shell
+sudo apt-get install python3-pip
+```
+That allows libraries installation with "pip" command
 - [SpeechRecognition](https://pypi.org/project/SpeechRecognition/)
 ```Shell
 sudo pip install speechrecognition
@@ -34,4 +39,7 @@ That contains the "call" function allowing to save text into audio wav file than
 
 ## Hardware
 There are different devices to connect on the Raspberry Pi:
-- Microphone thanks to a USB sound card on output port
+- Microphone thanks to a USB sound card on input port
+- Speakers directly connected to the output jack port
+- Button with the following electric circuit
+![alt text](https://raw.githubusercontent.com/LucaOuna/DeoSpeecher/image/path/to/img.png)
