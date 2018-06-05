@@ -54,10 +54,10 @@ The first step is to configure microphone and speaker with "alsamixer" module:
    apt-get install libasound2 alsa-utils alsa-oss
    alsamixer
 ```
-Then, we can run the main code "DeoSpeech.py":
+Then, we can run the main code "DeoSpeecher.py":
 ```Shell
    cd folder_of_main_code
-   python DeoSpeech.py
+   python DeoSpeecher.py
 ```
 Finally, configure your Raspberry Pi to launch the code directly when you turn it on. For that, edit the file rc.local:
 ```Shell
@@ -66,6 +66,6 @@ Finally, configure your Raspberry Pi to launch the code directly when you turn i
 And add these 2 lines just before "exit" instruction:
 ```Shell
    cd folder_of_main_code
-   python DeoSpeech.py
+   python DeoSpeecher.py
 ```
 That's it ! Henceforth, you can play with your new speech recognizer.
